@@ -1,0 +1,26 @@
+.carousel {
+	width: 75rem;
+	display: flex;
+	justify-content: center;
+	width: 900px;
+	width: 100%;
+	img {
+		height: 700px;
+		width: 400px;
+		border-radius: 50px;
+		border-style: unset;
+		height: 600px;
+		width: 100%;
+		border-radius: 0;
+		height: 400px;
+		width: 100%;
+		border-radius: 0;
+		height: 300px;
+		width: 100%;
+		border-radius: 0;
+	}
+}
+#carouselExampleIndicators {
+	margin: 0 auto;
+	width: 80%;
+}

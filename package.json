@@ -3,5 +3,21 @@
     "bootstrap": "^5.3.1",
     "boxicons": "^2.1.4",
     "fullpage.js": "^4.0.20"
-  }
+  },
+  "name": "proyecto_final",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "node": "^20.7.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./scss/style.scss ./css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

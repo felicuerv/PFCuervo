@@ -1,1112 +1,189 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-
-/** 
-|--------------------------------|
-|                                |
-| Index CSS                      |
-|                                |
-|--------------------------------|
-
-**/
 .navbar {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background: transparent; 
-    padding: 10px;
-
-}
-
-.navbar-brand {
-    display: flex;
-    justify-content: flex-start;
-}  
-
-.navbar-brand img{
-    width: 300px;
-    height: 300px;
-    margin-top: 35px;
-}
-
-/* .container-fluid{
-    height: 6.25rem;
-    display: flex;
-    justify-content: center;
-}
-.container-fluid a{
-    margin-top: 3.125rem;
-}  */
-
-
-.navbar a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 10px; }
+  .navbar a {
     font-size: 2.25rem;
     color: #000000;
     text-decoration: none;
     padding: .625rem;
     margin-bottom: 100px;
     font-family: 'Times New Roman', Times, serif;
-}
-.carousel{
-    width: 75rem;
+    font-size: 1.5rem;
+    margin-left: 0;
+    margin-bottom: 20px; }
+
+.navbar-brand {
+  display: flex;
+  justify-content: flex-start; }
+  .navbar-brand img {
+    width: 300px;
+    height: 300px;
+    margin-top: 35px; }
+
+.nav-wrapper {
+  width: 100%; }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent; }
+  nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
-}
-.carousel{
-    width: 900px;
-}
-.carousel img {
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 0px; }
+  nav a {
+    text-decoration: none;
+    color: white; }
+  nav label {
+    display: flex;
+    color: white;
+    cursor: pointer; }
+  nav #toogle:checked ~ .menu {
+    max-height: 700px; }
+
+nav #toogle, nav label {
+  display: none; }
+
+.carousel {
+  width: 75rem;
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  width: 100%; }
+  .carousel img {
     height: 700px;
     width: 400px;
     border-radius: 50px;
     border-style: unset;
-}
-#carouselExampleIndicators {
-    margin: 0 auto;
-    width: 80%;
-}
-.container{
-    text-align: center;
-    padding: 3.125rem;
-}
-.container h1{
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-}
-.opciones{
-    margin-top: 25rem;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.opciones_2{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    margin-bottom: 300px;
-    text-align: center;
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 500px;
-    
-}
-
-.opciones_2 h1{
-    font-size: 50px;
-}
-.opciones_2 p{
-    font-size: 20px
-}
-.pie{
-    background:transparent;
-    display: grid;
-    grid-template-columns: repeat(4,1fr) ;
-    padding: 75px;
-}
-
-.pie a{
-    color: #000000;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px
-}
-.pie p{
-    color: #000000;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
-.pie h3{
-    color: #000000;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 32px;
-}
-.rayita-pie{
-    width: 80%;
-}
-.fondito{
-    /* background: url(../assets/img/joyitas.jpg) repeat; */
-    background-size: cover;
-    background-position: center;
-}
-.fonduso {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: cover;
-
-}
-.texto{
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-}
-.texto h1{
-    font-size: 50px;
-}
-.texto p{
-    font-size: 20px;
-}
-.texto2{
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.texto2 h1{
-    font-size:50px;
-}
-.texto2 p{
-    font-size: 20px;
-}
-
-.bx.bxs-user-circle{
-    font-size: 75px;
-    padding: 10px 10px 10px 10px;
-}
-
-.bxs-lock{
-    font-size: 50px;
-    position: absolute;
-    left: 1100px;
-}
-
-.bxs-gift{
-    font-size: 50px;
-    position: absolute;
-    left: 1000px;
-}
-
-.bxs-wallet{
-    font-size: 50px;
-    position: absolute;
-    right: 1000px;
-}
-.fotos{
-    display: flex;
-    justify-content: center;
-}
-.fotos h2{
-    padding: 70px;
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-}
-.fotos .foto1{
-    margin-left: 70px;
-}
-.fotos .foto6{
-    margin-left: 200px;
-}
-.fotos img{
-    margin-left: -50px;
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    border-style: solid;
-    border-color: #FFF;
-    margin-bottom: 200px;
-    margin-top: 100px;
-
-}
-/** 
-|--------------------------------|
-|                                |
-| LOGIN CSS                      |
-|                                |
-|--------------------------------|
-
-**/
-
-.fondito-login{
-    background: url('../assets/img/joyas.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-
-}
-
-.wrapper{
-    width: 420px;
-    background: transparent;
-    border: .125rem solid rgba(255, 255, 255, .2);
-    backdrop-filter: blur(.625rem);
-    color: #FFFF;
-    border-radius: 10px;
-    padding: 1.875rem 40px;
-
-}
-.wrapper h1{
-    font-size: 36px;
-    text-align: center;
-
-}
-.wrapper .input-box{
-    position: relative;
-    width: 100%;
-    height:50px;
-    margin: 30px 0;
-
-}
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-    color: #FFF;
-    padding: 20px 45px 20px 20px ;
-
-}
-
-.input-box input::placeholder{
-    color: #FFF;
-}
-
-.input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-
-}
-
-.wrapper .remember-forgot{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;
-
-}
-
-.remember-forgot label input{
-    accent-color: #fff;
-    margin-right: 3px;
-
-}
-.remember-forgot a{
-    color: #FFF;
-    text-decoration: none;
-
-}
-.remember-forgot a:hover{
-    text-decoration: underline;
-}
-
-.wrapper .btn{
-    width: 100%;
-    height: 45px;
-    background: #FFF;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
-
-}
-
-.wrapper .register-link{
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.register-link p a{
-    color: #FFF;
-    text-decoration: none;
-    font-weight: 600;
-
-}
-
-.register-link p a:hover{
-    text-decoration: underline;
-}
-
-.bx-chevrons-left{
-    font-size: 50px;
-    color: #FFF;
-}
-
-/** 
-|--------------------------------|
-|                                |
-| Products CSS                   |
-|                                |
-|--------------------------------|
-
-**/
-
-.product{
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1) ;
-    border-radius: 20px;
-    background: #fff;
-}
-
-.main-container{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    gap: 3.125rem;
-    margin-bottom: 300px;
-}
-
-.product img{
-    width: 100%;
-}
-
-.product_desc{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    color: #102C57;
-    background-color: #FFF;
-    border-radius: 20px;
-}
-
-.product_desc h3{
-    font-size: 32px;
-    padding: 10px 0px   ;
-}
-.product_desc p{
-    font-size: 28px;
-    color: #907d10;
-}
-
-.orderby{
-    padding: 50px;
-}
-
-.orderby label{
-    font-size: 42px;
-    color: #102C57;
-}
-
-.orderby select{
-    font-size: 36px;
-    border-radius: 20px ;
-    margin-left: 15px;
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-    border-color: #102C57;
-}
-
-.container-prod {
-        text-align: center;
-        padding: 3.125rem;
-}
-
-.container-prod h1{
-    font-size: 54px;
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.container-prod p{
-    font-size: 36px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.ordeno option{
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.orderby h1{
-    margin-top: 30px;
-    text-align: center;
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-}
-
-
-.categorias h1{
-    text-align: center;
-    margin-bottom: 30px;
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-}
-
-.cosas a{
-    color: #102C57;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 36px;
-    text-decoration: none;
-}
-
-
-.cosas{
-    display: flex;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 6.25rem;
-    margin-bottom: 100px;
-    margin-top: 100px;
-}
-
-/** 
-|--------------------------------|
-|                                |
-| MENU                           |
-|                                |
-|--------------------------------|
-
-**/
-
-.nav-wrapper{
-    width: 100%;
-}
-
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center ;
-    background-color: transparent;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 5px;
-
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-}
-
-nav #toogle, nav label{
-    display: none;
-}
-
-/** 
-|--------------------------------|
-|                                |
-| SERVICIOS                      |
-|                                |
-|--------------------------------|
-
-**/
-
-form{
-    font-size: 30px;
-}
-
-.servicio{
-    padding-top: 80px;
-
-}
-.servicio h1{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 25px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #102C57;
-}
-
-.row {
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
-    backdrop-filter: blur(5px);
-    padding: 70px 50px 300px 50px;
-}
-
-.servicio-text{
-    margin-left: 80px;
-}
-.servicio-text h5{
-    font-size: 35px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #102C57;
-}
-
-.servicio-text2{
-    padding-top: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #102C57;
-}
-
-.form-label{
-    font-family: 'Times New Roman', Times, serif;
-    color: #102C57;
-}
-
-.fondoservicios {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: cover;
-
-}
-#validationServer01 {
-    font-size: 14px; 
-}
-#validationServer02 {
-    font-size: 14px; 
-}
-#validationServerUsernameFeedback{
-    font-size: 14px;
-}
-
-#validationServer03Feedback {
-    font-size: 14px; 
-}
-#validationServer04Feedback {
-    font-size: 14px; 
-}
-.form-check-label{
-    font-family: 'Times New Roman', Times, serif;
-    color: #102C57;
-}
-#invalidCheck3Feedback{
-    font-size: 14px;
-}
-
-/** 
-|--------------------------------|
-|                                |
-| Sobre nosotros                 |
-|                                |
-|--------------------------------|
-
-**/
-#section1{
-    background: url(../assets/img/fondo1.jpg);
-    background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la sección */
-    background-position: center; /* Centra la imagen de fondo */
-    /* Otras propiedades de fondo si es necesario */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-
-}
-.baja{
-    padding: 30px;
-}
-.baja h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: #102C57;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
-.flecha{
-    padding: 30px;
-    display: flex;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: auto;
-    justify-items: center;
-    color: #102C57;
-
-}
-
-#flecha-grande{
-    font-size: 25px;
-}
-
-#section1 h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    text-align: center; 
-}
-#section1 p{
-    font-family: 'Times New Roman', Times, serif;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    text-align: center; 
-    margin-top: 90px;
-}
-
-.text {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
-}
-
-.text p {
-    flex: 1; /* Hace que el párrafo tome el espacio restante */
-    /* Otras propiedades de estilo para el párrafo si es necesario */
-}
-
-.text img {
-    width: 500px; /* Ajusta el ancho según tus necesidades */
-    margin-right: 20px; /* Ajusta el margen derecho según tus necesidades */
-}
-
-
-#section2{
-    background: url(../assets/img/joyas.jpg);
-    background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la sección */
-    background-position: center; /* Centra la imagen de fondo */
-    /* Otras propiedades de fondo si es necesario */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-
-}
-
-#section2 h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.faq{
-    backdrop-filter: blur(.625rem);
-}
-#accordionPanelsStayOpenExample{
-    padding-top: 50px;
-}
-
-#section3 h1{
-    font-family: 'Times New Roman', Times, serif;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-#section3 p{
-    font-family: 'Times New Roman', Times, serif;
-    color: #FFF;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-#section3{
-    background: url(../assets/img/fondo2.jpg);
-    background-size: cover; /* Ajusta el tamaño del fondo para cubrir toda la sección */
-    background-position: center; /* Centra la imagen de fondo */
-    /* Otras propiedades de fondo si es necesario */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-
-}
-
-.cardsocios{
-    display: grid;
-    grid-template-columns:repeat(4,1fr) ;
-    padding: 100px;
-}
-
-
-.custom-btn {
-    background-color: #FFF !important;
-    color: #000000 !important;
-    border-color: #000000 !important;
-
-}
-
-.custom-btn:hover {
-    background-color: #000000 !important;
-    color: #FFF !important;
-    border-color: #FFF !important;
-}
-
-
-
-/** 
-|--------------------------------|
-|                                |
-| MEDIA QUERIES                  |
-|                                |
-|--------------------------------|
-
-**/
-
-
-@media (max-width: 1024px) {
-    /*-----------------------------------------------------------INDEX--------------------------------------------------------------------------*/
-    .navbar-brand img {
-    width: 200px; 
-    height: 200px; 
-    margin-top: 20px; 
-    }
-
-    .container-fluid {
-    height: auto; 
-    flex-direction: column; 
-    align-items: center;
-    gap: .625rem;
-    display: flex;
-    }
-
-    .container-fluid a {
-    margin-top: 10px; 
-    margin-left: 0;
-    margin-bottom: 10px;
-    }
-
-    .navbar a {
-    font-size: 1.5rem;
-    margin-left: 0;
-    margin-bottom: 20px;
-    }
-
-    .carousel {
-    width: 100%;
-    }
-
-    .carousel img {
     height: 600px;
-    width: 100%; 
-    border-radius: 0; 
-    }
+    width: 100%;
+    border-radius: 0;
+    height: 400px;
+    width: 100%;
+    border-radius: 0;
+    height: 300px;
+    width: 100%;
+    border-radius: 0; }
 
-    .opciones {
-    margin-top: 100px;
-    }
+#carouselExampleIndicators {
+  margin: 0 auto;
+  width: 80%; }
 
-    .opciones_2 {
-    margin-bottom: 100px; 
-    }
+.container {
+  text-align: center;
+  padding: 3.125rem; }
+  .container h1 {
+    color: #102C57;
+    font-family: 'Times New Roman', Times, serif; }
 
-    .pie {
-    padding: 20px;
-    }
+.opciones {
+  margin-top: 25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 100px; }
 
-    .bxs-lock,
-    .bxs-gift,
-    .bxs-wallet {
-    font-size: 40px;
-    position: static; 
-    left: auto;
-    right: auto;
-    }
+.opciones_2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-bottom: 300px;
+  text-align: center;
+  color: #102C57;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 500px;
+  margin-bottom: 100px; }
+  .opciones_2 h1 {
+    font-size: 50px; }
+  .opciones_2 p {
+    font-size: 20px; }
 
-    .fotos h2 {
-    padding: 20px;
-    font-size: 30px;
-    }
+.texto {
+  color: #102C57;
+  font-family: 'Times New Roman', Times, serif; }
+  .texto h1 {
+    font-size: 50px; }
+  .texto p {
+    font-size: 20px; }
 
-    .fotos .foto1 {
-    margin-left: 0;
-    }
+.texto2 {
+  color: #102C57;
+  font-family: 'Times New Roman', Times, serif; }
+  .texto2 h1 {
+    font-size: 50px; }
+  .texto2 p {
+    font-size: 20px; }
 
-    .fotos .foto6 {
-    margin-left: 0;
-    }
+.bx.bxs-user-circle {
+  font-size: 75px;
+  padding: 10px 10px 10px 10px; }
 
-    .fotos img {
-    margin-left: -25px;
-    height: 75px;
-    width: 75px; 
-    margin-bottom: 75px;
-    margin-top: 10px;
-    }
-/*------------------------------------------------------------Productos-------------------------------------------------------------------------*/
-    .product {
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .1);
-        border-radius: 20px;
-        background: #fff;
-    }
+.bxs-lock {
+  font-size: 50px;
+  position: absolute;
+  left: 1100px; }
 
-    .fondito-productos {
-        width: 100%;
-        padding: 120px;
-        background: url(../assets/img/fondo-productos.jpg);
-    }
+.bxs-gift {
+  font-size: 50px;
+  position: absolute;
+  left: 1000px; }
 
-    .main-container {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 3.125rem;
-        margin-bottom: 300px;
-        justify-content: center;
-        margin: 50px 50px;
-    }
+.bxs-wallet {
+  font-size: 50px;
+  position: absolute;
+  right: 1000px; }
 
-    .product img {
-        width: 100%;
-    }
+.fondito {
+  background-size: cover;
+  background-position: center; }
 
-    .product_desc {
-        font-family: 'Times New Roman', Times, serif;
-        text-align: center;
-        color: #102C57;
-        background-color: #FFF;
-        border-radius: 20px;
-    }
+.fonduso {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover; }
 
-    .product_desc h3 {
-        font-size: 32px;
-        padding: 10px 0px;
-    }
+.pie {
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 75px;
+  padding: 20px;
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); }
+  .pie a {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; }
+  .pie p {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px; }
+  .pie h3 {
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px; }
 
-    .product_desc p {
-        font-size: 28px;
-        color: #907d10;
-    }
-
-    .orderby {
-        padding: 50px;
-    }
-
-    .orderby label {
-        font-size: 42px;
-        color: #102C57;
-    }
-
-    .orderby select {
-        font-size: 36px;
-        border-radius: 20px;
-        margin-left: 15px;
-        color: #102C57;
-        font-family: 'Times New Roman', Times, serif;
-        border-color: #102C57;
-    }
-
-    .container-prod {
-        text-align: center;
-        padding: 3.125rem;
-    }
-
-    .container-prod h1 {
-        font-size: 54px;
-        color: #102C57;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    .container-prod p {
-        font-size: 36px;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    .ordeno option {
-        color: #102C57;
-        font-family: 'Times New Roman', Times, serif;
-    }
-
-    .orderby h1 {
-        margin-top: 30px;
-        text-align: center;
-        color: #102C57;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 50px;
-    }
-
-    .categorias h1 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #102C57;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 50px;
-    }
-
-    .cosas a {
-        color: #102C57;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 36px;
-        text-decoration: none;
-    }
-
-    .cosas {
-        display: flex;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 6.25rem;
-        margin-bottom: 100px;
-        margin-top: 100px;
-        align-content: center;
-        align-items: center;
-        justify-items: center;
-        margin: 50px 50px;
-    }
-}
-
-
-@media(max-width: 768px){
-/* ---------------------------------------------------------------Index------------------------------------------------------------------------- */
-    nav .menu{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-    nav ul{
-        flex-direction: column;
-        align-items: center;
-        padding: 0.5rem 0px;
-    }
-    nav label{
-        display: flex;
-        color: white;
-        cursor: pointer;
-    }
-    nav #toogle:checked ~ .menu{
-        max-height: 700px;
-    }
-    .bx-menu{
-        font-size: 50px;
-        color: #000000;
-    }
-    .header {
-        justify-content: center;
-    }
-    .logo img {
-        width: 150px;
-        height: 150px;
-        margin-top: 10px;
-    }
-    .fotos h2 {
-        display: flex;
-        text-align: center;
-        padding: 20px;
-        font-size: 30px;
-    }
-    
-    .fotos .foto1 {
-        margin-left: 0;
-    }
-    
-    .fotos .foto6 {
-        margin-left: 0;
-    }
-    
-    .fotos img {
-        margin-left: -15px;
-        height: 50px;
-        width: 50px; 
-        margin-bottom: 75px;
-        margin-top: 10px;
-    }
-    .container-fluid {
-        height: auto; 
-        flex-direction: row; 
-        align-items: center;
-        gap: .625rem;
-        display: flex;
-        }
-    .carousel img {
-            height: 400px;
-            width: 100%; 
-            border-radius: 0; 
-        }
-    .fotos{
-            display: flex;
-            flex-wrap: wrap;
-    }
-/* ---------------------------------------------------------------Productos------------------------------------------------------------------------- */
-    .pie {
-        background: transparent;
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    .main-container {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            gap: 3.125rem;
-            margin-bottom: 300px;
-            justify-content: center;
-            margin: 50px 50px
-    }
-    .cosas {
-        display: flex;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 6.25rem;
-        margin-bottom: 100px;
-        margin-top: 100px;
-        align-content: center;
-        align-items: center;
-        justify-items: center;
-        margin: 50px 50px;
-    }
-}
-
-@media(max-width: 560px){
-/* ---------------------------------------------------------------Index------------------------------------------------------------------------- */
-    .pie{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-    }
-    .fotos{
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-@media(max-width: 425px){
-/* ---------------------------------------------------------------Index------------------------------------------------------------------------- */
-    .opciones{
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .pie{
-        background:transparent;
-        display: grid;
-        grid-template-columns: repeat(1,1fr) ;
-    }
-    footer{
-        display: flex;
-        justify-items: center;
-    }
-    .carousel img {
-        height: 300px;
-        width: 100%; 
-        border-radius: 0; 
-        }
-    .fotos{
-        display: flex;
-        flex-wrap: wrap;
-    }
-/* ---------------------------------------------------------------Productos------------------------------------------------------------------------- */
-    .orderby {
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-    }
-    .main-container {
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 3.125rem;
-        margin-bottom: 300px;
-        justify-content: center;
-        margin: 50px 50px;
-    }
-
-}
-
-@media(max-width: 320px){
-    .cosas {
-        display: flex;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 4rem;
-        margin-bottom: 100px;
-        margin-top: 100px;
-        align-content: center;
-        align-items: center;
-        justify-items: center;
-        margin: 50px 50px;
-    }
-}
+.rayita-pie {
+  width: 80%; }

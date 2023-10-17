@@ -1,0 +1,41 @@
+.texto {
+	color: #102C57;
+	font-family: 'Times New Roman', Times, serif;
+	h1 {
+		font-size: 50px;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+.texto2 {
+	color: #102C57;
+	font-family: 'Times New Roman', Times, serif;
+	h1 {
+		font-size: 50px;
+	}
+	p {
+		font-size: 20px;
+	}
+}
+.bx {
+	&.bxs-user-circle {
+		font-size: 75px;
+		padding: 10px 10px 10px 10px;
+	}
+}
+.bxs-lock {
+	font-size: 50px;
+	position: absolute;
+	left: 1100px;
+}
+.bxs-gift {
+	font-size: 50px;
+	position: absolute;
+	left: 1000px;
+}
+.bxs-wallet {
+	font-size: 50px;
+	position: absolute;
+	right: 1000px;
+}
