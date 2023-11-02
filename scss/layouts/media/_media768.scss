@@ -1,0 +1,107 @@
+@media (max-width: 768px){
+    nav {
+        .menu {
+            width: 100%;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        ul {
+            flex-direction: column;
+            align-items: center;
+            padding: 0.5rem 0px;
+        }
+        label {
+            display: flex;
+            color: white;
+            cursor: pointer;
+        }
+        #toogle {
+            &:checked {
+                & ~ .menu {
+                    max-height: 700px;
+                }
+            }
+        }
+    }
+    .bx-menu {
+        font-size: 50px;
+        color: #000000;
+    }
+    .header {
+        justify-content: center;
+    }
+    .logo {
+        img {
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+        }
+    }
+    .fotos {
+        display: flex;
+        flex-wrap: wrap;
+        h2 {
+            display: flex;
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .foto1 {
+            margin-left: 0;
+        }
+        .foto6 {
+            margin-left: 0;
+        }
+        img {
+            margin-left: -15px;
+            height: 50px;
+            width: 50px;
+            margin-bottom: 75px;
+            margin-top: 10px;
+        }
+    }
+    .container-fluid {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        gap: .625rem;
+        display: flex;
+    }
+    .carousel {
+        img {
+            height: 400px;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    .pie {
+        background: transparent;
+        @include grid(repeat(2, 1fr));
+    }
+    .main-container {
+        @include grid(repeat(2, 1fr));
+        gap: 3.125rem;
+        margin-bottom: 300px;
+        justify-content: center;
+        margin: 50px 50px;
+    }
+    .cosas {
+        @include flex(center,center,none,none,6.25rem);
+        @include grid(repeat(2, 1fr));
+        margin-bottom: 100px;
+        margin-top: 100px;
+        align-content: center;
+        justify-items: center;
+        margin: 50px 50px;
+    }
+    
+    .text {
+        @include flex(none,center,column,none,none);
+        align-content: center;
+    }
+    .cardsocios {
+        @include grid(repeat(2, 1fr));
+        padding: 20px;
+    }
+}

@@ -1,0 +1,40 @@
+@media (max-width: 425px) {
+    .texto{
+        text-align: center;
+    }
+    .texto2{
+        text-align: center;
+    }
+    .opciones {
+        @include flex(center, center, none, none, none);
+        @include grid(repeat(1, 1fr));
+    }
+    .pie {
+        background: transparent;
+        @include grid(repeat(1, 1fr));
+    }
+    footer {
+        @include flex(center, none, none, none, none);
+    }
+    .carousel {
+        img {
+            height: 300px;
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    .fotos {
+        @include flex(none, none, none, wrap, none);
+    }
+    .orderby {
+        padding: 50px;
+        @include flex(none, none, column, none, none);
+    }
+    .main-container {
+        @include grid(repeat(1, 1fr));
+        gap: 3.125rem;
+        margin-bottom: 300px;
+        justify-content: center;
+        margin: 50px 50px;
+    }
+}

@@ -1,0 +1,69 @@
+form {
+    font-size: map-get($font-size, m); }
+  
+  .servicio {
+    padding-top: 80px; }
+  
+  .servicio h1 {
+    @include flex(center, center, none, none, none);
+    padding: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: $color-letra; }
+  
+  .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    @include flex(none,none,none,wrap,none);
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+    backdrop-filter: blur(5px);
+    padding: 70px 50px 300px 50px; }
+  
+  .servicio-text {
+    margin-left: 80px; }
+  
+  .servicio-text h5 {
+    font-size: map-get($font-size, m);
+    font-family: 'Times New Roman', Times, serif;
+    color: $color-letra; }
+  
+  .servicio-text2 {
+    padding-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: $color-letra; }
+  
+  .form-label {
+    font-family: 'Times New Roman', Times, serif;
+    color: $color-letra; }
+  
+  .fondoservicios {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover; }
+  
+  #validationServer01 {
+    font-size: map-get($font-size, xs); }
+  
+  #validationServer02 {
+    font-size: map-get($font-size, xs); }
+  
+  #validationServerUsernameFeedback {
+    font-size: map-get($font-size, xs); }
+  
+  #validationServer03Feedback {
+    font-size: map-get($font-size, xs); }
+  
+  #validationServer04Feedback {
+    font-size: map-get($font-size, xs); }
+  
+  .form-check-label {
+    font-family: 'Times New Roman', Times, serif;
+    color: $color-letra; }
+  
+  #invalidCheck3Feedback {
+    font-size: map-get($font-size, xs); }

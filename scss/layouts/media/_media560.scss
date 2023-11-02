@@ -1,0 +1,14 @@
+@media (max-width: 560px) {
+  /* ---------------------------------------------------------------Index------------------------------------------------------------------------- */
+.pie {
+    @include grid(repeat(2, 1fr));}
+.fotos {
+    @include flex(none, none, none, wrap,none);}
+.cardsocios {
+    @include grid(repeat(1, 1fr));
+    padding: 20px;
+    @include flex(center, center, column, none,none);
+    }
+
+
+}

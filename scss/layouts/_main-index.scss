@@ -1,33 +1,145 @@
+
+.carousel {
+	width: 75rem;
+	@include flex(center, none, none, none, none);
+	width: 900px;
+	img {
+		height: 700px;
+		width: 400px;
+		border-radius: 50px;
+		border-style: unset;
+	}
+}
+#carouselExampleIndicators {
+	margin: 0 auto;
+	width: 80%;
+}
 .container {
 	text-align: center;
 	padding: 3.125rem;
 	h1 {
-		color: #102C57;
+		color: $color-letra;
 		font-family: 'Times New Roman', Times, serif;
 	}
 }
 .opciones {
 	margin-top: 25rem;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	text-align: center;
-	display: flex;
-	justify-content: space-evenly;
-	margin-top: 100px;
+	@include grid(repeat(2,1fr));
+	@include flex(space-evenly, center, none, none, none);
 }
 .opciones_2 {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
+	@include grid(repeat(1,1fr));
 	margin-bottom: 300px;
 	text-align: center;
-	color: #102C57;
+	color: $color-letra;
 	font-family: 'Times New Roman', Times, serif;
 	margin-bottom: 500px;
-	margin-bottom: 100px;
 	h1 {
-		font-size: 50px;
+		font-size: map-get($font-size, l);
 	}
 	p {
-		font-size: 20px;
+		font-size: map-get($font-size, s);
+	}
+}
+.pie {
+	background: transparent;
+	@include grid(repeat(4,1fr));
+	padding: 75px;
+	a {
+		color: $negro;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: map-get($font-size, s);
+	}
+	p {
+		color: $negro;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: map-get($font-size, s);
+	}
+	h3 {
+		color: $negro;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: map-get($font-size, m);
+	}
+}
+.rayita-pie {
+	width: 80%;
+}
+.fondito {
+	background-size: cover;
+	background-position: center;
+}
+.fonduso {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-size: cover;
+}
+.texto {
+	color: $color-letra;
+	font-family: 'Times New Roman', Times, serif;
+	h1 {
+		font-size: map-get($font-size, l);
+	}
+	p {
+		font-size: map-get($font-size, s);
+	}
+}
+.texto2 {
+	color: $color-letra;
+	font-family: 'Times New Roman', Times, serif;
+	h1 {
+		font-size: map-get($font-size, l);
+	}
+	p {
+		font-size: map-get($font-size, s);
+	}
+}
+.bx {
+	&.bxs-user-circle {
+		font-size: map-get($font-size, xl);
+		padding: 10px 10px 10px 10px;
+	}
+}
+.bxs-lock {
+	font-size: map-get($font-size, l);
+	position: absolute;
+	left: 1300px;
+}
+.bxs-gift {
+	font-size: map-get($font-size, l);
+	position: absolute;
+	left: 1200px;
+}
+.bxs-wallet {
+	font-size: map-get($font-size, l);
+	position: absolute;
+	right: 1200px;
+}
+.fotos {
+	@include flex(center, none, none, none, none);
+	h2 {
+		padding: 70px;
+		color: $color-letra;
+		font-family: 'Times New Roman', Times, serif;
+		font-size: map-get($font-size, l);
+	}
+	.foto1 {
+		margin-left: 70px;
+	}
+	.foto6 {
+		margin-left: 200px;
+	}
+	img {
+		margin-left: -50px;
+		height: 150px;
+		width: 150px;
+		border-radius: 100%;
+		border-style: solid;
+		border-color: #FFF;
+		margin-bottom: 200px;
+		margin-top: 100px;
 	}
 }

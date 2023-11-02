@@ -1,0 +1,104 @@
+#section1 {
+	background: url(../assets/img/fondo1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	h1 {
+		font-family: 'Times New Roman', Times, serif;
+		color: #FFF;
+		@include flex(center,none,none,none,none);
+		text-align: center;
+	}
+	p {
+		font-family: 'Times New Roman', Times, serif;
+		color: #FFF;
+		@include flex(center,none,none,none,none);
+		text-align: center;
+		margin-top: 90px;
+	}
+}
+.baja {
+	padding: 30px;
+	h1 {
+		font-family: 'Times New Roman', Times, serif;
+		color: $color-letra;
+		@include flex(center,none,none,none,none);
+		text-align: center;
+	}
+}
+.flecha {
+	padding: 30px;
+	@include flex(center,none,none,none,none);
+	@include grid(auto);
+	justify-items: center;
+	color: $color-letra;
+}
+#flecha-grande {
+	font-size: map-get($font-size, s);
+}
+.text {
+	@include flex(none,center,none,none,none);
+	p {
+		flex: 1;
+	}
+	img {
+		width: 500px;
+		margin-right: 20px;
+	}
+}
+#section2 {
+	background: url(../assets/img/joyas.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	h1 {
+		font-family: 'Times New Roman', Times, serif;
+		color: #FFF;
+		@include flex(center,none,none,none,none);
+		text-align: center;
+	}
+}
+.faq {
+	backdrop-filter: blur(0.625rem);
+}
+#accordionPanelsStayOpenExample {
+	padding-top: 50px;
+}
+#section3 {
+	background: url(../assets/img/fondo2.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	h1 {
+		font-family: 'Times New Roman', Times, serif;
+		color: #FFF;
+		@include flex(center,none,none,none,none);
+		text-align: center;
+	}
+	p {
+		font-family: 'Times New Roman', Times, serif;
+		color: #FFF;
+		@include flex(center,none,none,none,none);
+		text-align: center;
+	}
+}
+.cardsocios {
+	@include grid(repeat(4,1fr));
+	padding: 100px;
+	transition: 0.5s ease;
+	img{
+		&:hover{
+			transform: translateY(-10px);
+		}
+	}
+}
+.custom-btn {
+	background-color: #FFF !important;
+	color: $negro !important;
+	border-color: $negro !important;
+	&:hover {
+		background-color: $negro !important;
+		color: #FFF !important;
+		border-color: #FFF !important;
+	}
+}
